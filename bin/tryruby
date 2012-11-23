@@ -3,3 +3,5 @@ require 'tryruby'
 
 require 'tryruby/cli'
 Tryruby::CLI.run
+
+# add -Ilib to run during development

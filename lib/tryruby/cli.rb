@@ -40,6 +40,10 @@ module Tryruby
     #   write_config_file
     # end
 
+    def script
+      @script ||= Script.new("scripts/default.json")
+    end
+
     def run
       print "Hello! Interactive ruby ready.\n"
 
@@ -50,9 +54,27 @@ module Tryruby
         # print instructions if code == 'help'
         # otherwise, print command used, run it and print results
 
-        result = eval(command)
+        case command
+        when "next", "continue"
+          script.next
+        when "prev", "previous", "back"
+          script.previous
+        when "exit"
+          print "Goodbye, I hope you had fun!\n"
+          exit 0
+        else
+          begin
+            result = eval(command)
 
-        puts "=> #{result}"
+            puts "=> #{result}"
+
+            script.next if script.continue?
+          rescue SyntaxError
+            puts "Oops, seems to have been some error. Care to try again?"
+
+            next
+          end
+        end
       end
     end
 

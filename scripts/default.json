@@ -1,0 +1,227 @@
+{
+  
+  "messages": [
+    {
+      "title": "Got 15 minutes? Give Ruby a shot right now!",
+      "body": "Ruby is a programming language from Japan (available at ruby-lang.org) which is revolutionizing the web. The beauty of Ruby is found in its balance between simplicity and power.\nTry out Ruby code in the prompt on the right. In addition to Ruby's built-in methods, the following commands are available:\nhelp → Start the 15 minute interactive tutorial. Trust me, it's very basic!\nclear → Clear screen. Useful if your browser starts slowing down. Your command history will be remembered.\nnext → Allows you to skip to the next section of a lesson.\nback → Allows you to skip to the previous section of a lesson.",
+      "continue": false
+    },
+    {
+      "title": "Using the Prompt",
+      "body": "The window to the right is a Ruby prompt.\nType a line of Ruby code, hit Enter and watch it run!\nFor example, try typing some math. Like: 2 + 6",
+      "continue": true
+    },
+    {
+      "title": "Using the Prompt",
+      "body": "Good! You did a bit of math. See how the answer popped out?\nRuby recognizes numbers and mathematic symbols. You could try some other math like:\n4 * 10\n5 - 12\n40 / 4",
+      "continue": false
+    },
+    {
+      "title": "Say Your Name",
+      "body": "Sure, computers are handy and fast for math.\nLet's move on. Want to see your name reversed?\nType your first name in quotes like this: \"Jimmy\"",
+      "continue": true
+
+    },
+    {
+      "title": "Say Your Name Reversed",
+      "body": "Perfect, you've formed a string from the letters of your name. A string is a set of characters the computer can process.\nImagine the letters are on a string of laundry line and the quotes are clothespins holding the ends. The quotes mark the beginning and end.\nTo reverse your name, type: \"Jimmy\".reverse (Don't forget the dot!)",
+      "continue": true
+
+    },
+    {
+      "title": "Counting the Letters",
+      "body": "You have used the reverse method on your name!\nBy enclosing your name in quotes, you made a string. Then you called the reverse method, which works on strings to flip all the letters backwards.\nNow, let's see how many letters are in your name: \"Jimmy\".length",
+      "continue": true
+    },
+    {
+      "title": "On Repeat",
+      "body": "Now, I'm sure by now you're wondering what any of this is good for. Well, I'm sure you've been to a website that screamed, Hey, your password is too short! See, some programs use this simple code.\nWatch this. Let's multiply your name by 5. \"Jimmy\" * 5",
+      "continue": true
+    },
+    {
+      "title": "Hey, Summary #1 Already",
+      "body": "Let's look at what you've learned in the first minute.\nThe prompt. Typing code into the prompt gives you an answer from a red prompt. All code gives an answer.\nNumbers and strings are Ruby's math and text objects.\nMethods. You've used English-language methods like reverse and symbolic methods like * (the multiplication method.) Methods are actions!\nThis is the essence of your learning. Taking simple things, toying with them and turning them into new things. Feeling comfortable yet? I promise you are.\nOkay, let's do something uncomfortable. Try reversing a number: 40.reverse",
+      "continue": true
+    },
+    {
+      "title": "Stop, You're Barking Mad!",
+      "body": "You can't reverse the number forty. I guess you can hold your monitor up to the mirror, but reversing a number just doesn't make sense. Ruby has tossed an error message.\nRuby is telling you there is no method reverse for numbers.\nMaybe if you turn it into a string: 40.to_s.reverse.",
+      "continue": true
+    },
+    {
+      "title": "Boys are Different From Girls",
+      "body": "And numbers are different from strings. While you can use methods on any object in Ruby, some methods only work on certain types of things. But you can always convert between different types using Ruby's \"to\" methods.\nto_s converts things to strings.\nto_i converts things to integers (numbers.)\nto_a converts things to arrays.\nWhat are arrays?! They are lists. Type in a pair of brackets: [].",
+      "continue": true
+    },
+    {
+      "title": "Standing in Line",
+      "body": "Great, that's an empty list. Lists store things in order. Like standing in line for popcorn. You are behind someone and you wouldn't dream of pushing them aside, right? And the guy behind you, you've got a close eye on him, right?\nHere's a list for you. Lottery numbers: [12, 47, 35].",
+      "continue": true
+    },
+    {
+      "title": "One Raises Its Hand",
+      "body": "list of lottery numbers. Which one is the highest?\nTry: [12, 47, 35].max.",
+      "continue": true
+    },
+    {
+      "title": "Tucking a List Away",
+      "body": "Good, good. But it's annoying to have to retype that list, isn't it?\nLet's save our numbers inside a ticket like so: ticket = [12, 47, 35]",
+      "continue": true
+    },
+    {
+      "title": "Now Type Ticket",
+      "body": "Now type ticket",
+      "continue": true
+    },
+    {
+      "title": "Saved, Tucked Away",
+      "body": "Fantastic! You've hung on to your lotto numbers, tucking them away inside a variable called ticket.\nLet's put your lotto numbers in order, how about? Use: ticket.sort!\nWhen you want to move on, type next",
+      "continue": false
+    },
+    {
+      "title": "Summary #2 is Upon Us",
+      "body": "You had a list. You sorted the list. The ticket variable is now changed.\nDid you notice that the sort! method has a big, bright exclamation at the end? A lot of times Ruby methods shout like that if they change what the variable contains for good. It's nothin' special, just a mark.\nNow, look how your second minute went:\nErrors. If you try to reverse a number or do anything fishy, Ruby will skip the prompt and tell you so.\nArrays are lists for storing things in order.\nVariables save a thing and give it a name. You used the equals sign to do this.\nLike: ticket = [14, 37, 18].\nIn all there are eight lessons. You are two-eighths of the way there! This is simple stuff, don't you think? Good stuff up ahead.\nLet's change directions for a moment. I've stuffed a bit of poetry for you in a certain variable. Take a look. Type print poem",
+      "continue": true
+    },
+    {
+      "title": "Sadly, You Hate Toast Poetry",
+      "body": "Look, it's okay. You don't have to like it. Hack it up, be my guest.\nInstead of toast, go for a melon or something. Try this: poem['toast'] = 'honeydew'",
+      "continue": true
+    },
+    {
+      "title": "Sadly, You Hate Toast Poetry",
+      "body": "Now type print poem by itself to see the new poem.\nNotice how you only changed the first toast? The joke's on you, bread hater.\nWhen you want to move on, type next",
+      "continue": false
+    },
+    {
+      "title": "Ready, Aim",
+      "body": "The square brackets you just used are very common in Ruby. Remember, you typed: poem['toast'] = 'honeydew'. That box with the word toast has a square bracket on each side, see?\nThe two brackets are like sights used to line up a target. Exactly. These brackets mean, \"I am looking for ____.\" Ready, aim. Here you're looking for toast and swapping it out with fruit.\nHere's a question: what happens when we reverse this whole poem? poem.reverse",
+      "continue": true
+    },
+    {
+      "title": "Too Much Reversal",
+      "body": "Okay, sure. So the whole poem's been turned backwards, letter-by-letter. I really want to just reverse the lines, though. Move the last line up to first and the first line down to last. Backwards, but not that backwards.\nHere's how: poem.lines.to_a.reverse",
+      "continue": true
+    },
+    {
+      "title": "Ringlets of Chained Methods",
+      "body": "So what do you see? What happened there? You typed poem.lines.to_a.reverse and what happened?\nTwo things happened. You turned the poem into a list using lines.to_a. lines decides the way the string is split up, then to_a converted it into an Array. (To array.) Different methods, such as bytes and chars can be used in place of lines. By using lines, ruby will return each line of the poem.\nThen, you reversed that list. You had each line. You reversed them. That's it.\nLet's tack one more method on the end there: print poem.lines.to_a.reverse.join",
+      "continue": true
+    },
+    {
+      "title": "Of All the Summaries, #3 is Here Now",
+      "body": "Good show, my friend! The join method took that list of reversed lines and put them together into a string. (Sure, you could have also just used to_s.)\nReview time.\nExclamations. Methods may have exclamations (and also question marks) in their name. No big deal. Try: poem.include? \"my hand\"\nSquare brackets. Target and find things. Search and replace.\nChaining methods lets you get a lot more done. Break up a poem, reverse it, reassemble it: poem.lines.to_a.reverse.join\nAt this point, you may want to tinker with the poem a bit more. A complete list of all the String methods is here. Go ahead and try a few (such as poem.downcase or poem.delete.)\nWhen you're ready to move on, type: books = {}",
+      "continue": true
+    },
+    {
+      "title": "A Wee Blank Book",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    },
+    {
+      "title": "",
+      "body": "",
+      "continue": true
+    }
+  ]
+}
