@@ -48,13 +48,11 @@ module Tryruby
       print "Hello! Interactive ruby ready.\n"
 
       while command = Readline.readline("> ", true)
-        # next command if code == 'next'
-        # previous command if code == 'previous' or 'back'
-        # exit loop if code == 'exit'
         # print instructions if code == 'help'
-        # otherwise, print command used, run it and print results
 
         case command
+        when "help"
+          puts "Soon, I will have help for you."
         when "next", "continue"
           script.next
         when "prev", "previous", "back"
