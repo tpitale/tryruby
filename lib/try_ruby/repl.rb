@@ -36,6 +36,10 @@ module TryRuby
             puts "Oops, seems to have been some error. Care to try again?"
 
             next
+          rescue NameError
+            puts "Oops, you tried to use a method or variable that doesn't exist. Care to try again?"
+
+            next
           end
         end
       end
