@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 require 'tryruby'
 
-require 'tryruby/cli'
-Tryruby::CLI.run
+TryRuby::CLI.run
 
 # add -Ilib to run during development

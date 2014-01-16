@@ -1,3 +1,3 @@
-module Tryruby
+module TryRuby
   VERSION = "0.0.1"
 end

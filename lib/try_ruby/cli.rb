@@ -1,4 +1,4 @@
-module Tryruby
+module TryRuby
   class CLI
     attr_accessor :options
 
@@ -7,9 +7,6 @@ module Tryruby
     end
 
     # def create_config_file
-    #   # oauthy-bit, make a class
-
-    #   # open a url
     #   `open 'https://api.put.io/v2/oauth2/authenticate?client_id=183&response_type=code&redirect_uri=#{Getit::REDIRECT}'`
     #   # stdin ask for code from the url
     #   print "Please paste what comes after the 'code=': "
@@ -40,40 +37,8 @@ module Tryruby
     #   write_config_file
     # end
 
-    def script
-      @script ||= Script.new("scripts/default.json")
-    end
-
     def run
-      print "Hello! Interactive ruby ready.\n"
-
-      while command = Readline.readline("> ", true)
-        # print instructions if code == 'help'
-
-        case command
-        when "help"
-          puts "Soon, I will have help for you."
-        when "next", "continue"
-          script.next
-        when "prev", "previous", "back"
-          script.previous
-        when "exit"
-          print "Goodbye, I hope you had fun!\n"
-          exit 0
-        else
-          begin
-            result = eval(command)
-
-            puts "=> #{result}"
-
-            script.next if script.continue?
-          rescue SyntaxError
-            puts "Oops, seems to have been some error. Care to try again?"
-
-            next
-          end
-        end
-      end
+      TryRuby::REPL.new(options).start
     end
 
     def self.run
