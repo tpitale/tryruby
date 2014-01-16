@@ -26,6 +26,12 @@ module TryRuby
       current_message["continue"]
     end
 
+    def first
+      @position = 0
+
+      print current_body
+    end
+
     def next
       @position += 1
 
@@ -33,7 +39,7 @@ module TryRuby
     end
 
     def previous
-      @message_position -= 1
+      @position -= 1
 
       print current_body
     end
