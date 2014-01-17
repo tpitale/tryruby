@@ -1,13 +1,13 @@
 module TryRuby
   class Script
-    def initialize(file)
+    def initialize(filename)
       @position = 0
 
-      @script = JSON.parse(File.read(file))
+      @script = JSON.parse(File.read(filename))
     end
 
     def messages
-      @script["messages"]
+      @messages ||= @script["messages"].map {|attributes| Message.new(attributes)}
     end
 
     def current_message
@@ -15,21 +15,22 @@ module TryRuby
     end
 
     def current_body
-       "\n" + current_message["body"] + "\n"
+       "\n" + current_message.body + "\n"
     end
 
     def current_title
-      current_message["title"]
+      current_message.title
     end
 
     def continue?
-      current_message["continue"]
+      current_message.continue?
     end
 
-    def first
-      @position = 0
-
-      print current_body
+    def intro
+      messages.first.tap do |message|
+        puts message.title
+        puts message.body
+      end
     end
 
     def next
@@ -42,6 +43,13 @@ module TryRuby
       @position -= 1
 
       print current_body
+    end
+
+    def outro
+      messages.last.tap do |message|
+        puts message.title
+        puts message.body
+      end
     end
   end
 end

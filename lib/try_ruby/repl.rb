@@ -10,7 +10,8 @@ module TryRuby
 
     def start
       print "Hello! Interactive ruby ready.\n"
-      script.first
+      puts script.current_title
+      puts script.current_body
 
       while command = Readline.readline("> ", true)
         # print instructions if code == 'help'

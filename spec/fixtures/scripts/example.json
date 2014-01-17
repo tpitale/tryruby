@@ -1,0 +1,20 @@
+{
+  
+  "messages": [
+    {
+      "title": "Got 15 minutes? Give Ruby a shot right now!",
+      "body": "Ruby is a programming language from Japan.",
+      "continue": false
+    },
+    {
+      "title": "Using the Prompt",
+      "body": "The window to the right is a Ruby prompt.\nType a line of Ruby code, hit Enter and watch it run!\nFor example, try typing some math. Like: 2 + 6",
+      "continue": true
+    },
+    {
+      "title": "Of All the Summaries, #3 is Here Now",
+      "body": "Good show, my friend! The join method took that list of reversed lines and put them together into a string. (Sure, you could have also just used to_s.)\nReview time.\nExclamations. Methods may have exclamations (and also question marks) in their name. No big deal. Try: poem.include? \"my hand\"\nSquare brackets. Target and find things. Search and replace.\nChaining methods lets you get a lot more done. Break up a poem, reverse it, reassemble it: poem.lines.to_a.reverse.join\nAt this point, you may want to tinker with the poem a bit more. A complete list of all the String methods is here. Go ahead and try a few (such as poem.downcase or poem.delete.)\nWhen you're ready to move on, type: books = {}",
+      "continue": true
+    }
+  ]
+}
