@@ -12,11 +12,11 @@ And then execute to run through the exercise:
 
 ## TODO
 
-* [ ] Remember the command history
-* [ ] Print out all the work done at the end
-* [ ] Create multiple levels of learning
-* [ ] Expand what the REPL can do and teach
-* [ ] Loadable DSL for scripts to teach aspects of ruby
+* Remember the command history
+* Print out all the work done at the end
+* Create multiple levels of learning
+* Expand what the REPL can do and teach
+* Loadable DSL for scripts to teach aspects of ruby
 
 ## Contributing
 
