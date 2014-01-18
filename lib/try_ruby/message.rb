@@ -7,5 +7,8 @@ module TryRuby
 
     alias :continue? :continue
 
+    def formatted
+      [title, body]
+    end
   end
 end

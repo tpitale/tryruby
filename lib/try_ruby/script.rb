@@ -1,5 +1,7 @@
 module TryRuby
   class Script
+    attr_reader :position
+
     def initialize(filename)
       @position = 0
 
@@ -14,12 +16,10 @@ module TryRuby
       messages[@position]
     end
 
-    def current_body
-       "\n" + current_message.body + "\n"
-    end
+    alias :current :current_message
 
-    def current_title
-      current_message.title
+    def length
+      messages.length
     end
 
     def continue?
@@ -27,29 +27,29 @@ module TryRuby
     end
 
     def intro
-      messages.first.tap do |message|
-        puts message.title
-        puts message.body
-      end
-    end
-
-    def next
-      @position += 1
-
-      print current_body
-    end
-
-    def previous
-      @position -= 1
-
-      print current_body
+      messages.first
     end
 
     def outro
-      messages.last.tap do |message|
-        puts message.title
-        puts message.body
-      end
+      messages.last
+    end
+
+    def last?
+      @position == (length-1)
+    end
+
+    def first?
+      @position == 0
+    end
+
+    def next
+      @position += 1 unless last?
+      current
+    end
+
+    def previous
+      @position -= 1 unless first?
+      current
     end
   end
 end
