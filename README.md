@@ -3,6 +3,7 @@
 TryRuby is a gem repl version of the wonderful website tryruby.org
 
 [![Build Status](https://travis-ci.org/tpitale/tryruby.png?branch=master)](https://travis-ci.org/tpitale/tryruby)
+[![Code Climate](https://codeclimate.com/github/tpitale/tryruby.png)](https://codeclimate.com/github/tpitale/tryruby)
 
 ## Installation
 
